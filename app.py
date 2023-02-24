@@ -22,3 +22,4 @@ st.write("Contacts : [Linkedin](www.linkedin.com/in/eliott-bonte-534a76207)")
 
 # LottieFile is an animation that scales without any pixelization
 
+lottie_cards_url = "https://assets6.lottiefiles.com/packages/lf20_LkyI64BhN0.json"
