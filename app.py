@@ -44,4 +44,23 @@ with st.container():# a multi element container
 
     with right_column:
         st_lottie(lottie_animation, height= 300, key= "animation")
+        
+with st.container():#for contact service I use formsubmit https://formsubmit.co/
+    st.write("---")
+    st.header("Get In Touche With Me!")
+    st.write("##")
+    
+    
+    contact_form = """
+    <form action="https://formsubmit.co/eliottbonte@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    """
+    
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
 
