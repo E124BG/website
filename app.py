@@ -72,5 +72,3 @@ with st.container():#for contact service I use formsubmit https://formsubmit.co/
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
 
-# ---- HEROKU USAGE ---
-# for hosting, heroku is used, see documentation : https://gilberttanner.com/blog/deploying-your-streamlit-dashboard-with-heroku/
