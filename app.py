@@ -55,7 +55,7 @@ with st.container():# a multi element container
         
 with st.container():#for contact service I use formsubmit https://formsubmit.co/
     st.write("---")
-    st.header("Get In Touche With Me!")
+    st.header("Get In Touch With Me!")
     st.write("##")
     
     
