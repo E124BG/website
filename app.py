@@ -71,4 +71,8 @@ with st.container():#for contact service I use formsubmit https://formsubmit.co/
     left_column, right_column = st.columns(2)
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
+        
+        
+# idea : make the animation clickable and lead to another page
+# or replace animation by 3S
 
