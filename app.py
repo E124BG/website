@@ -1,10 +1,15 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
+import time
 
 # LottieFile is an animation that scales without any pixelization
 
 lottie_cards_url = "https://assets6.lottiefiles.com/packages/lf20_LkyI64BhN0.json"
+
+
+# ANSI escape codes, used to move the cursor, change color of text or underline in console
+CLEAR_AND_RETURN = "\033[H" #clears the terminal and goes back left to original position
 
 #use of all of the width of the screen (standard would center the content)
 #emojis cheat sheet : https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -52,6 +57,25 @@ with st.container():# a multi element container
 
     with right_column:
         st_lottie(lottie_animation, height= 300, key= "animation")
+        if st.button("Find my card!"):
+            st.write("Computing...")
+            time.sleep(1)
+            st.write("Evaluating all the 54 different outcomes...")
+            time.sleep(1)
+            st.write("Consulting zodiac charts hasmaps")
+            time.sleep(0.1)
+            st.write("Double checking past present and future timelines")
+            time.sleep(3)
+            with st.empty():
+                for card_percent in range(100):
+                    st.write(f"A card has been determined with an accuracy of {card_percent}%")
+                    if card_percent < 7 or card_percent > 95:
+                        time.sleep(0.2)
+                    else :
+                        time.sleep(0.03)
+                st.write("A card has been determined with an accuracy of 100%")
+            st.write("The card is: 3 :heart:")
+                
         
 with st.container():#for contact service I use formsubmit https://formsubmit.co/
     st.write("---")
